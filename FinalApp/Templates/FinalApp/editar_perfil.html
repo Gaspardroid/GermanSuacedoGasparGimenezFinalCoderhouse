@@ -1,0 +1,44 @@
+{% extends 'FinalApp/index.html' %}
+{% load static %}
+
+{% block 'nav' %}
+
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'perfil' %}">Volver al Perfil</a>
+            </div>
+        </nav>
+
+{% endblock 'nav' %}
+
+
+{% block 'header' %}
+
+    <header class="registrar">
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <form action= {% url 'editar_perfil' %} method = "POST">
+                                {% csrf_token %}
+                                <table>
+                                    {{formulario.as_table}}
+                                </table>
+                            
+                                <input type="submit" placeholder= "Enviar">
+                            
+                            </form>         
+                            <h1 class="mb-5">{{mensaje}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+     </header>
+
+{% endblock 'header' %}
+
+{% block 'section' %}
+
+{% endblock 'section' %}
