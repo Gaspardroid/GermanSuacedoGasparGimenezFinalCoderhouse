@@ -1,0 +1,52 @@
+{% extends 'FinalApp/index.html' %}
+{% load static %}
+
+{% block 'nav' %}
+
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'indice' %}">Principal</a>
+                <a class="navbar-brand" href="{% url 'asociar' %}">Asociate aca</a>
+
+            </div>
+        </nav>
+
+{% endblock 'nav' %}
+
+
+{% block 'header' %}
+
+    <header class="publicar">
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="text-center text-white">      
+                            {% if messages %}
+                                {% for mensaje in messages %}
+                                    <div class="alert alert-success alert-dismissible fade show">
+                                        <strong>Exito!</strong> {{mensaje}}
+                                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                                {%for proveedor in proveedores%}
+                                    <li>
+                                        <h4>Nombre: {{proveedor.nombre}}</h4> 
+                                        <h4>Tipo de Produccion: {{proveedor.tipo}}</h4> 
+                                        <h4>Contacto: {{proveedor.email}}</h4> 
+                                        <a href={% url "editar_proveedor" proveedor.id %} >Editar</a> | <a href={% url "eliminar_proveedor" proveedor.id %} >Eliminar</a>
+                                    </li>
+                                {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+     </header>
+
+{% endblock 'header' %}
+
+{% block 'section' %}
+
+{% endblock 'section' %}
