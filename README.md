@@ -4,7 +4,7 @@ Trabajo practico realizado por los alumnos Gaspar Gimenez y German Saucedo.
 
 Enlace al Video Explicativo
 
----------------------------------------------
+https://youtu.be/GHPasmNCY7c
 
 PASOS a seguir para probar el proyecto:
 -iniciar pipenv
