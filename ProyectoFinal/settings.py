@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'FinalApp',
+    'FinalApp', #Acá agregamos la app para ser reconocida por el software
 ]
 
 MIDDLEWARE = [

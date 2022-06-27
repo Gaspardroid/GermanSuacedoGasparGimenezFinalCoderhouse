@@ -1,8 +1,6 @@
-Entrega proyecto Final lenguaje Python para la plataforma Coderhouse
+Entrega Proyecto Final lenguaje Python para la plataforma Coderhouse
 
-
-Trabajo practico realizado por los alumnos German Saucedo y Gaspar Gimenez
-
+Trabajo practico realizado por los alumnos Gaspar Gimenez y German Saucedo. 
 
 Enlace al Video Explicativo
 
@@ -24,7 +22,6 @@ CASO 1 - Creacion Usuario
 4- Las opciones de Creacion, edicion y eliminacion de los objetos 
 es exclusiva de los usuarios registrados
 
-
 CASO 2 - Productos
 
 1- Se crea desde el boton 'Vender'
@@ -43,7 +40,6 @@ CASO 3- Proveedor
 5- Las opciones de Creacion, edicion y eliminacion de los objetos 
 es exclusiva de los usuarios registrados
 
-
 Las herramientas/programas y entornos que se utlizaron son:
 
 -  Visual Studio Code
@@ -58,4 +54,5 @@ Los invitamos a realizar las pruebas correspondientes.
 
 Atentamente.
 
-German Saucedo, Gaspar Gimenez.
+Gaspar Gimenez y Germán Saucedo.
+
