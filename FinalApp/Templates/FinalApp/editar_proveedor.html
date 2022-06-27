@@ -1,0 +1,41 @@
+{% extends 'FinalApp/index.html' %}
+{% load static %}
+
+{% block 'nav' %}
+
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'lista_proveedores' %}">Volver</a>
+            </div>
+        </nav>
+
+{% endblock 'nav' %}
+
+
+{% block 'header' %}
+
+    <header class="publicar">
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <form method="post">
+                                {% csrf_token %}
+                                <table>
+                                    {{formulario.as_table}}
+                                </table>
+                                <input type="submit" placeholder= "Enviar">
+                            </form>         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+     </header>
+
+{% endblock 'header' %}
+
+{% block 'section' %}
+
+{% endblock 'section' %}
