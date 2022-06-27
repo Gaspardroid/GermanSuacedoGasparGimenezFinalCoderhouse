@@ -1,6 +1,6 @@
 Entrega Proyecto Final lenguaje Python para la plataforma Coderhouse
 
-Trabajo practico realizado por los alumnos Gaspar Gimenez y German Saucedo.
+Trabajo practico realizado por los alumnos Gaspar Gimenez y German Saucedo. 
 
 Enlace al Video Explicativo
 
